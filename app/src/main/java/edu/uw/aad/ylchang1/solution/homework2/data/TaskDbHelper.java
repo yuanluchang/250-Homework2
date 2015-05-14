@@ -14,6 +14,7 @@ import edu.uw.aad.ylchang1.solution.homework2.model.Task;
 
 /**
  * Created by Margaret on 2/23/2015.
+ * Updated by Yuan-Lu Chang on 5/13/2015.
  */
 public class TaskDbHelper extends SQLiteOpenHelper {
 

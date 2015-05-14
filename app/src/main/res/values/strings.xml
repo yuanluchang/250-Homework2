@@ -5,7 +5,8 @@
     <string name="add_task_instr">Please add a task:</string>
     <string name="action_add">Add</string>
     <string name="action_delete">Delete</string>
-    <string name="title_activity_add_task">AddTaskActivity</string>
+    <string name="title_activity_add_task">Homework 2</string>
+    <string name="title_activity_detail_task">Details</string>
     <string name="action_settings">Settings</string>
 
 </resources>

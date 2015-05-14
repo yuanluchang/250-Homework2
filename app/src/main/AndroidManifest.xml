@@ -18,7 +18,7 @@
         <activity
             android:windowSoftInputMode="adjustResize"
             android:name=".DetailActivity"
-            android:label="@string/title_activity_add_task"
+            android:label="@string/title_activity_detail_task"
             android:parentActivityName=".MainActivity">
         </activity>
         <activity

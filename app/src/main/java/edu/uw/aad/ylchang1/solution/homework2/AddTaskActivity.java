@@ -10,6 +10,15 @@ import android.widget.EditText;
 
 import edu.uw.aad.ylchang1.solution.homework2.data.TaskDbHelper;
 
+/**
+ * Created by Margaret on 2/23/2015.
+ * Updated by Yuan-Lu Chang on 5/13/2015
+ * Android 250 - Spring 2015 - Homework 2 Solution
+ * 1. User can create a new task.
+ * 2. User can enter task name and task description on screen.
+ * 3. After user clicks on the OK button, it should validate user data input (i.e. each field needs to be filled out).
+ * 4. Persist data in a sqlite database.
+*/
 
 public class AddTaskActivity extends ActionBarActivity {
 
@@ -31,10 +40,19 @@ public class AddTaskActivity extends ActionBarActivity {
                 insertTaskToDb();
             }
         });
+
     }
 
     private void insertTaskToDb() {
 
+        if (mEditTextTaskName.getText().toString().isEmpty()) {
+            mEditTextTaskName.setError("You must enter data here.");
+            return;
+        }
+        if (mEditTextTaskDesc.getText().toString().isEmpty()) {
+            mEditTextTaskDesc.setError("You must enter data here.");
+            return;
+        }
         TaskDbHelper taskDbHelper = new TaskDbHelper(this);
         taskDbHelper.addTask(getInput(mEditTextTaskName), getInput(mEditTextTaskDesc));
         finish(); // go back to main screen

@@ -1,6 +1,11 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
     android:layout_width="match_parent" android:layout_height="match_parent">
+
     <fragment class="edu.uw.aad.ylchang1.solution.homework2.TaskDetailFragment"
         android:id="@+id/details_fragment"
-        android:layout_width="match_parent" android:layout_height="match_parent" />
-</FrameLayout>
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:layout="@layout/fragment_detail"/>
+
+</LinearLayout>
